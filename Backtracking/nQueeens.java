@@ -29,8 +29,8 @@ public class nQueeens {
     public static void nQueens(char board[][],int row){
         //base
         if(row==board.length) {
-           // printBoard(board);
-            count ++;
+            printBoard(board);
+            //count ++;
             return;
         }
 
