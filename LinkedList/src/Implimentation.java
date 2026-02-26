@@ -18,9 +18,9 @@ public static class linkedlist {
            }
            else{
                tail.next=temp;
-               tail = temp;
-           }
 
+           }
+           tail = temp;
        }
        void insertAtBeginning(int val){
            Node temp = new Node(val);
@@ -69,7 +69,8 @@ public static class linkedlist {
                temp = temp.next;
            }
            temp.next=temp.next.next;
- tail=temp;
+           if(idx== size()-1){
+          tail=temp;}
        }
        void display(){
            Node temp = head ;
