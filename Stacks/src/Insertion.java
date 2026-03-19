@@ -10,6 +10,15 @@ public class Insertion {
         InsertAtBottomRec(st , n);
         st.push(top);
     }
+
+    public static void InsertAtIndexRec(Stack<Integer>st , int n , int idx){
+        if(st.size()==idx){st.push(n);
+        return;}
+        int top = st.pop();
+        InsertAtIndexRec(st , n , idx);
+        st.push(top);
+
+    }
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         Stack<Integer> st = new Stack<>();
@@ -37,10 +46,10 @@ public class Insertion {
 
 
 //        Inserting Number AT bottom( Recursive mthd)
-        System.out.println("Enter the number you want to insert at bottom");
-        int x = sc.nextInt();
-        InsertAtBottomRec(st,x);
-        System.out.println("Orignal stack"+st);
+//       System.out.println("Enter the number you want to insert at bottom");
+//     int x = sc.nextInt();
+//   InsertAtBottomRec(st,x);
+ // System.out.println("Orignal stack"+st);
 
 
              // Insert At Index
@@ -54,6 +63,7 @@ public class Insertion {
 //        while( rt.size()>0){
 //            st.push(rt.pop());
 //        }
-//        System.out.println(st);
+        InsertAtIndexRec(st , 10,3);
+   System.out.println(st);
     }
 }

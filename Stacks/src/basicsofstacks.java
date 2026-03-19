@@ -11,11 +11,12 @@ public class basicsofstacks {
         st.push(23);
         st.push(33);
         st.push(54);
+        st.push(99);
        // peek
         System.out.println(st.peek());
         System.out.println(st);
 //        st.pop(); // upar wale element ko hatta dena
 //        System.out.println(st);
-        System.out.println("Size is      " + st.size());
+        System.out.println("Size is = " + st.size());
     }
 }
