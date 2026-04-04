@@ -10,7 +10,7 @@ public class DisplayStack {
     public static void displayRec(Stack<Integer> st){
         if(st.size()==0) return ;
         int top=st.pop();
-        displayReverserec(st);
+        displayRec(st);
         System.out.print(top+"");
         st.push(top);
     }
@@ -21,7 +21,7 @@ public class DisplayStack {
         st.push(3);
         st.push(4);
         st.push(5);
-        displayReverserec(st);
+        displayRec(st);
 
 //        //using Stack
 //        Stack<Integer> rt = new Stack<>();
