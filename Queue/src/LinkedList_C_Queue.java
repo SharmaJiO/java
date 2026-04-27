@@ -56,7 +56,7 @@ public class LinkedList_C_Queue {
         }
     }
     public static  void main(String []args){
-        linked_Implementation.queueLL q1 = new linked_Implementation.queueLL() ;
+        queueLL q1 = new queueLL() ;
         q1.add(1);
         q1.add(2);
         q1.add(3);
