@@ -9,12 +9,12 @@ public class Activity_section_1 {
         //sorting
         int activities[][]=new int[start.length][3];
         for(int i = 0 ; i<start.length ; i++){ //O(logn)
-            activities[i][0]=i;
-            activities[i][1]=start[i];
-            activities[i][2]=end[i];
+            activities[i][0]=i; //index in 0
+            activities[i][1]=start[i];//start time in 1
+            activities[i][2]=end[i];//end time in 2
         }
         //lamda dunctions -> shortform  (this is used to sort 2D array)
-        Arrays.sort(activities , Comparator.comparingDouble(o->o[2]));
+        Arrays.sort(activities , Comparator.comparingDouble(o->o[2])); // sorts in ascending order
 
         //end time sorted basis
         int maxAct = 0;
