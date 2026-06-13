@@ -5,8 +5,8 @@ public class choco {
         Integer costVer[]={2,1,3,1,4};
         Integer costHor[]={4,1,2};
 
-        Arrays.sort(costVer,Collections.reverseOrder());
-        Arrays.sort(costHor,Collections.reverseOrder());
+        Arrays.sort(costVer,Collections.reverseOrder());//descending order
+        Arrays.sort(costHor,Collections.reverseOrder());//descending order
         int cost = 0;
         int h =0,v=0; //  horizontal/vertical cut index
         int hp=1 , vp=1; //   horizontal/vertical pieces
