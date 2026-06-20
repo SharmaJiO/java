@@ -18,6 +18,7 @@ public class candy_1 {
                 candies[i]=Math.max(candies[i],candies[i+1]+1);
             }
         }
+
         int sum = 0;
         for(int candy:candies){
             sum+=candy;
