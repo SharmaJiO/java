@@ -107,10 +107,10 @@ public class Sub_Arrays {
             arr[i] = sc.nextInt();
         }
 
-// Sub_Array(arr);
-        System.out.println("Enter the range ");
-        int s = sc.nextInt();
-        int e = sc.nextInt();
-        SubArraySum_prefix(arr , s, e);
+      Sub_Array(arr);
+//        System.out.println("Enter the range ");
+//        int s = sc.nextInt();
+//        int e = sc.nextInt();
+//        SubArraySum_prefix(arr , s, e);
     }
 }

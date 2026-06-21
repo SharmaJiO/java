@@ -10,7 +10,6 @@ public class Min_Absolute_Diff {
         for(int i = 0 ; i<A.length ; i++){
             sum+=Math.abs(A[i]-B[i]);
         }
-
         System.out.println("Minimum Absolute Difference pair is = "+sum);
     }
 
