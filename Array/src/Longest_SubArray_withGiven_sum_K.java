@@ -26,16 +26,20 @@ public  static int Max_subArray2(int arr[],int s){
     int sum=0;
     int i=0 ,j=0;
     while(j<arr.length){
-        sum=sum+arr[i];
+        // Expand window
+        sum += arr[j];
 
-        if(sum==s){
-            int a = j-1+1;
-            len = Math.max(a,len);
-        }
-        while(sum > s){
-            sum-=arr[i];
+        // Shrink window if sum exceeds k
+        while (sum > s) {
+            sum -= arr[i];
             i++;
         }
+
+        // Check if current window sum is k
+        if (sum == s) {
+            len = Math.max(len, j - i + 1);
+        }
+
         j++;
     }
     if(len==0){return 0;}
